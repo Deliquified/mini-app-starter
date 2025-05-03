@@ -46,6 +46,7 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
     async function fetchProfile() {
       if (!walletConnected || !accounts[0]) {
         console.log('Skipping profile fetch - not connected or no accounts:', { walletConnected, accounts });
+        setProfileData(null);
         return;
       }
 
