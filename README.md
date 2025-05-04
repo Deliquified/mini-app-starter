@@ -81,11 +81,12 @@ src/
 │   │   │   ├── upProvider.tsx       # UP Provider integration
 │   │   │   └── providers.tsx        # Combined providers manager
 │   │   └── LandingPage.tsx          # Landing page for direct web access
-│   ├── helper/
-│   │   └── pinata.ts                # IPFS upload helper functions
 │   ├── pinata/
 │   │   └── config.ts                # Pinata API configuration
+│   │   └── helperFunc.ts            # Pinata helper functions
 │   ├── api/
+│   │   ├── pinataGetFile/
+│   │   │   └── route.ts             # Pinata API route for retrieving file
 │   │   └── pinataPinFile/
 │   │       └── route.ts             # Pinata API route for file pinning
 │   ├── page.tsx                     # Main page showing profile data
